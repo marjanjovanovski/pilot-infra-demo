@@ -1,0 +1,60 @@
+.div_VelikaSystemContainer 
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 5900px;
+	height: 1900px;
+	transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+	align-items: center;
+	justify-content: center;
+	
+}
+.div_VelikaSystemContainer img 
+{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	backface-visibility: hidden;
+}
+
+.div_VelikaSystemDirectionMove 
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 5900px;
+	height: 1900px;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.5s ease-in-out; 
+}
+.div_VelikaSystemDirectionMove img 
+{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.div_StarClusterMileContainer
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 5000px;
+	height: 5000px;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.5s ease-in-out;
+	
+}
+.div_StarClusterMileContainer img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	
+}

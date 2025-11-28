@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Marjan Jovanovski</title>
+	
+	<link rel="stylesheet" href="styles/style.css?v=1.0.0">
+	<link rel="stylesheet" href="styles/main_controls.css?v=1.0.0">
+	<link rel="stylesheet" href="styles/menu.css?v=1.0.0">
+	<link rel="stylesheet" href="styles/velika_stars.css?v=1.0.0">
+	<link rel="stylesheet" href="styles/content.css?v=1.0.0">
+	<link rel="stylesheet" href="styles/portfolio.css?v=1.0.0">
+	<link rel="stylesheet" href="styles/preloader.css?v=1.0.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	
+	
+    <script src="js/thrust_rotation.js?v=1.0.0"></script>
+	<script src="js/thrust_direction_depth.js?v=1.0.0"></script>
+	<script src="js/bgSoundAutoPlay.js?v=1.0.0"></script>
+	<script src="js/main_controls_init.js?v=1.0.0"></script>
+	<script src="js/menu_nav.js?v=1.0.0"></script>
+	
+	<script src="js/preloader.js?v=1.0.0"></script>
+	<script src="js/portfolio.js?v=1.0.0"></script>
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+	<link rel="manifest" href="ico/site.webmanifest">
+	
+	<meta property="og:title" content="Portfolio – Marjan Jovanovski" />
+	<meta property="og:description" content="Marjan Jovanovski, Project/Product Manager" />
+	<meta property="og:url" content="https://marjan.janissaries.mk" />
+	<meta property="og:type" content="website" />
+	
+</head>
+<body>
+
+	<div id="preloader_wrapper">
+	  <div class="preloader">
+		<span class="tone_mid">Loading Pilot</span>
+		<div class="progress_container">
+		  <div class="progress_fill"></div>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="div_StarClusterMileContainer" id="divId_StarClusterMileContainer">
+        <img src="res/image/StarClusterMile.jpg" id="rotateStarCluster">
+    </div>
+	<div class="div_VelikaSystemDirectionMove" id="div_VelikaSystemDirectionMove">
+		<div class="div_VelikaSystemContainer" id="divId_VelikaSystemContainer">
+			<img src="res/image/Sector2_VelikaSystem.png" id="rotateCraft">
+		</div>
+    </div>
+	<div class="div_main_loader" id="div_placeholder">
+    
+	</div>
+	
+	<div class="div_menu" id="div_menu">
+		<div class="div_menu_bg"></div> <!-- New div for the background -->
+		<ul class="menu hide_ul" id="ul_menu">
+			<li id="30_meetme"><span class="menu_label">Meet me</span></li>
+			<li id="40_carryons"><span class="menu_label">My carry-ons</span></li>
+			<li id="71_portfolio"><span class="menu_label">Portfolio</span></li>
+			<li id="10_pilot"><span class="menu_label">Project “Pilot”</span></li>
+		</ul>
+		<span class="spn_additional_controls" id="btn_bgAudio" >
+			<i class="fa-solid fa-circle-play" id="i_play_bg_music"></i>
+		</span>
+	</div>
+	<div class="thrust_wrapper">
+		<div class="div_thrust_contain">
+			<div class="btn_main_controls" id="btn_rotation_Right">
+				<span class="spn_main_controls"><i class="fa-solid fa-rotate-right"></i></span>
+			</div> 
+			<div class="btn_main_controls" id="btn_zoom_in">
+				<span class="spn_main_controls"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+			</div>
+			<div class="btn_main_controls" id="btn_rotation_Left">
+				<span class="spn_main_controls"><i class="fa-solid fa-rotate-left"></i></span>
+			</div>
+			<div class="btn_main_controls" id="btn_zoom_out">
+				<span class="spn_main_controls"><i class="fa-solid fa-magnifying-glass-minus"></i></span>
+			</div> 			
+		</div>
+		
+		<div class="div_menu_contain">
+			<div class="btn_main_controls" id="btn_burger_menu">
+				<span class="spn_main_controls"><i class="fa fa-bars"></i></span>
+			</div> 
+			<div class="btn_main_controls" id="btn_recenter">
+				<span class="spn_main_controls"><i class="fa-solid fa-arrows-to-circle"></i></span>
+			</div> 
+		</div>
+		
+		<div class="div_thrust_contain">
+			<div class="btn_main_controls" id="btn_slide_up">
+				<span class="spn_main_controls"><i class="fa-solid fa-circle-down"></i></span>
+			</div> 
+			<div class="btn_main_controls" id="btn_slide_right">
+				<span class="spn_main_controls"><i class="fa-solid fa-circle-left"></i></span>
+			</div>
+			<div class="btn_main_controls" id="btn_slide_down">
+				<span class="spn_main_controls"><i class="fa-solid fa-circle-up"></i></span>
+			</div> 
+			<div class="btn_main_controls" id="btn_slide_left">
+				<span class="spn_main_controls"><i class="fa-solid fa-circle-right"></i></span>
+			</div> 
+		</div>
+	</div>
+
+	<!-- Portfolio Image Modal -->
+	<div class="portfolio_modal" id="portfolio_modal"></div>
+    
+    <audio id="hoverSound" src="res/audio/hover.mp3"></audio>
+    <audio id="clickSound" src="res/audio/click.mp3"></audio>
+	<audio id="backgroundAudio" loop>
+		<source src="res/audio/MarjanVelika-ArisVeyra.mp3" type="audio/mpeg">
+		Browser does not support the audio element.
+	</audio>
+
+
+<link rel="stylesheet" href="styles/preloader.css?v=1.0.0">
+</body>
+</html>
