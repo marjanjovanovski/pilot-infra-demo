@@ -38,16 +38,17 @@ resource "aws_s3_bucket" "website" {
   }
 }
 
-# public website hosting
+# Relax bucket-level Block Public Access so the website can be public
 resource "aws_s3_bucket_public_access_block" "website" {
   bucket = aws_s3_bucket.website.id
 
   block_public_acls       = false
   block_public_policy     = false
-  restrict_public_buckets = false
   ignore_public_acls      = false
+  restrict_public_buckets = false
 }
 
+# public website hosting
 resource "aws_s3_bucket_website_configuration" "website" {
   bucket = aws_s3_bucket.website.id
 
