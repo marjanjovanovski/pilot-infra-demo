@@ -1,7 +1,7 @@
 version: "2"
 
 stack_defaults:
-  # Spacelift run 
+  # Spacelift runs from here
   project_root: "iac"
 
   # sync app/ to the S3 website bucket
