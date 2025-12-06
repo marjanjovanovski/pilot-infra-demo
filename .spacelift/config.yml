@@ -1,0 +1,9 @@
+version: "2"
+
+stack_defaults:
+  # Terraform root for this repo – Spacelift runs from here
+  project_root: "iac"
+
+  # After a successful apply, sync app/ to the S3 website bucket
+  after_apply:
+    - aws s3 sync ../app s3://marjan-portfolio-f75cd219 --delete
