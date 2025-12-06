@@ -6,4 +6,4 @@ stack_defaults:
 
   # sync app/ to the S3 website bucket
   after_apply:
-    - aws s3 sync ../app s3://marjan-portfolio-f75cd219 --delete
+    - aws s3 sync ../../app s3://marjan-portfolio-f75cd219 --delete
