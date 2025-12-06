@@ -2,7 +2,7 @@ version: "2"
 
 stack_defaults:
   # Spacelift runs from here
-  project_root: "iac"
+  project_root: "iac/aws-webportfolio-demo"
 
   # sync app/ to the S3 website bucket
   after_apply:
